@@ -45,13 +45,13 @@ def put_data_in_s3_bucket():
         's3',
         aws_access_key_id = ACCESS_KEY_ID,
         aws_secret_access_key = SECRET_ACCESS_KEY,
-        region_name = REGION,
     )
     try:
         client.create_bucket(Bucket = 'python-aws-data-engineering')
 
         with open("data.csv", "rb") as file:
-            client.upload_fileobj(file, 'python-aws-data-engineering', "data.csv")
+            client.upload_fileobj(file, 'python-aws-data-engineering', "data.csv", ExtraArgs={
+                         'ServerSideEncryption': 'AES256'})
 
     except Exception as e:
         return e

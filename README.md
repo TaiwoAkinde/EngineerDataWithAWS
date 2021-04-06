@@ -1,7 +1,7 @@
 # EngineerDataWithAWS
-###A simple project to demonstrate basic data engineering process with Python and AWS
+## A simple project to demonstrate basic data engineering process with Python and AWS
 
-# URL: https://realpython.com/pipenv-guide/#pipenv-introduction
+### URL: https://realpython.com/pipenv-guide/#pipenv-introduction
 
 -- create a corresponding repo on GitHub
 
