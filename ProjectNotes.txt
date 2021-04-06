@@ -28,6 +28,12 @@
     - Python
     - Boto3 (AWS SDK for Python)
 
+    # Create a user and assign appropriate rights on AWS IAM for development purposed
+    # get the :
+      .. aws_access_key_id
+      .. aws_secret_access_key
+      store these securely and reference in your main app
+
 
 -----> Moving to production
         # Okay, so let’s say you’ve got everything working in your local development environment and you’re ready to push it to production. To do that, you need to lock your environment so you can ensure you have the same one in production:
